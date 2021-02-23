@@ -1,0 +1,176 @@
+.popup {
+    position: fixed;
+    z-index: 200;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    &__content {
+        position: absolute;
+        width: 640px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    &__recommend {
+        position: relative;
+        width: 430px;
+        margin: 0 auto;
+        text-align: center;
+        background-image: url(../../images/popup.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+        padding-bottom: 0;
+        border-radius: 25px;
+        overflow: hidden;
+
+        h2 {
+            width: 144%;
+            margin: 25px 0;
+            margin-left: -23%;
+            display: block;
+            position: relative;
+            text-align: center;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 400;
+            font-size: 40px;
+            color: #dadbdb;
+            transform: scaleX(0.7);
+            letter-spacing: 5px;
+        }
+
+        .recommend {
+            &__popupArticle {
+                position: relative;
+                margin: 25px auto;
+
+                p {
+                    width: 144%;
+                    margin: 15px 0;
+                    margin-left: -23%;
+                    display: block;
+                    position: relative;
+                    text-align: center;
+                    font-family: 'Noto Serif TC', serif;
+                    font-weight: 400;
+                    font-size: 25px;
+                    color: #dadbdb;
+                    transform: scaleX(0.7);
+                    letter-spacing: 5px;
+                }
+            }
+        }
+
+        a {
+            border-top: 1px solid rgba(60,74,89, 0.95);
+            position: relative;
+            width: 142%;
+            padding: 25px 0;
+            margin-left: -21%;
+            display: block;
+            position: relative;
+            text-align: center;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 400;
+            font-size: 34px;
+            color: #dadbdb;
+            transform: scaleX(0.7);
+            letter-spacing: 5px;
+        }
+    }
+
+    &__form {
+        position: relative;
+        width: 430px;
+        margin: 0 auto;
+        text-align: center;
+        background-image: url(../../images/popup.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+        padding-bottom: 0;
+        border-radius: 25px;
+        overflow: hidden;
+        h2 {
+            width: 144%;
+            margin: 25px 0;
+            margin-bottom: 0;
+            margin-left: -21%;
+            display: block;
+            position: relative;
+            text-align: center;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 400;
+            font-size: 40px;
+            color: #dadbdb;
+            transform: scaleX(0.7);
+            letter-spacing: 5px;
+        }
+
+        img {
+            display: block;
+            margin: 10px  auto;
+            width: 80%;
+        }
+        a {
+            border-top: 1px solid rgba(60,74,89, 0.95);
+            position: relative;
+            width: 142%;
+            padding: 25px 0;
+            margin-left: -21%;
+            display: block;
+            position: relative;
+            text-align: center;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 400;
+            font-size: 30px;
+            color: #dadbdb;
+            transform: scaleX(0.7);
+            letter-spacing: 5px;
+        }
+    }
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    z-index: 11;
+    background-image: url(../../images/loading_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    &__content {
+        width: 100%;
+        max-width: 640px;
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        img {
+            position: relative;
+            display: block;
+            margin: 20px auto;
+        }
+        .title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-115%);
+        }
+    }
+}

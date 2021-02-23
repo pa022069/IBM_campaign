@@ -1,0 +1,35 @@
+{
+  "name": "demo-project",
+  "version": "1.0.0",
+  "description": "Jeffrey-Projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pa022069/demo-project.git"
+  },
+  "dependencies": {
+    "concat": "^1.0.3",
+    "gsap": "^2.1.3",
+    "html2canvas": "^1.0.0-rc.3",
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
+    "jquery.nicescroll": "^3.7.6",
+    "lazyload": "^2.0.0-rc.2",
+    "node-pre-gyp": "^0.13.0",
+    "scrollreveal": "^4.0.5"
+  },
+  "devDependencies": {
+    "onchange": "^6.0.0",
+    "uglify-js": "^3.6.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "scripts": {
+    "concat:js": "concat -o dist/index.js src/js/default/Ajax.js src/js/default/ga.js",
+    "uglify:js": "uglifyjs dist/index.js -o dist/index.min.js -c",
+    "build:js": "npm run concat:js && npm run uglify:js",
+    "build:webpack": "npx webpack --config webpack.config.js"
+  },
+  "author": "JeffreySM.Wu@ogilvy.com",
+  "license": "ISC"
+}
